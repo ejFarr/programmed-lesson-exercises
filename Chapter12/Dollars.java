@@ -1,8 +1,11 @@
+import java.util.Scanner;
 public class Dollars
 {
     public static void main(String[] args)
     {
-        int c = 324;
+        System.out.println("Input the cents: ");
+        Scanner scan = new Scanner(System.in);
+        int c = scan.nextInt();
         int dolla;
         int rem;
 

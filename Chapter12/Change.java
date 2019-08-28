@@ -1,8 +1,11 @@
+import java.util.Scanner;
 public class Change
 {
     public static void main(String[] args)
     {
-        int change = 163;
+        System.out.println("Input the change: ");
+        Scanner scan = new Scanner(System.in);
+        int change = scan.nextInt();
         int d;
         int q;
         int di;
