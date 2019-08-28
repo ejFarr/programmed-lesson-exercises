@@ -9,7 +9,7 @@ public class Appliance
         System.out.println("Enter kilowatt-hours used per year");
         Scanner scram = new Scanner(System.in);
 
-        double cost = scim.nextDouble() * scram.nextDouble();
+        double cost = (scim.nextDouble() * scram.nextDouble()) / 100;
         System.out.println("Annual cost: " + cost);
 
     }
