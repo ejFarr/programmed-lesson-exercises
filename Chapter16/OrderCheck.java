@@ -38,17 +38,14 @@ public class OrderCheck
         {
             System.out.println("Check the order: too few nuts");
         }
-        else if (n)
-        {
-            System.out.println("Check the order: Enough nuts");
-        }
+        
         if (w == false)
         {
             System.out.println("Check the order: too few washers");
         }
-        else if (w)
+        if (n && w)
         {
-            System.out.println("Check the order: Enough washers");
+            System.out.println("Order is Ok");
         }
 
         System.out.println("Total cost: " + cost);
