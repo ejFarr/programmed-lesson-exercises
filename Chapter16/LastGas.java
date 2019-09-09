@@ -3,7 +3,7 @@ public class LastGas
 {
     public static void main(String[] args)
     {
-        
+        int nu;
         
         Scanner scram = new Scanner(System.in);
         System.out.println("Tank capacity:");
@@ -15,15 +15,15 @@ public class LastGas
         System.out.println("Miles per gallon");
         int mile = scram.nextInt();
 
-        tank -= (tank/gage);
+        nu = tank * gage;
 
-        int stu = (int)(tank * mile);
+        int stu = (int)((nu * mile)/100);
 
         if (stu < 200)
         {
             System.out.println("Get Gas!");
         }
-        else if (stu > 200)
+        else if (stu >= 200)
         {
             System.out.println("Safe to Proceed");
         }
