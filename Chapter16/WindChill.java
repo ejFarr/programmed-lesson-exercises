@@ -22,7 +22,7 @@ public class WindChill
         }
         else
         {
-            chill = (double)(35.74 + (0.6215 * temp - (35.75 * Math.pow(wind, 0.16)) + (0.4275 * temp * Math.pow(wind, 0.16))));
+            chill = (35.74 + (0.6215 * temp - (35.75 * Math.pow(wind, 0.16)) + (0.4275 * temp * Math.pow(wind, 0.16))));
         }
         System.out.println(chill);
     }
