@@ -10,37 +10,37 @@ public class Fantasy
         String nami = scram.nextLine();
 
         System.out.println("Enter STRENGTH (1-10): ");
-        int str = scram.nextInt();
+        int strength = scram.nextInt();
 
         System.out.println("Enter HEALTH (1-10): ");
-        int hel = scram.nextInt();
+        int health = scram.nextInt();
 
         System.out.println("Enter LUCK (1-10): ");
-        int lck = scram.nextInt();
-        while (str > 10 || str < 1)
+        int luck = scram.nextInt();
+        while (strength > 10 || strength < 1)
         {
             System.out.println("Enter STRENGTH (1-10): ");
-            str = scram.nextInt();
+            strength = scram.nextInt();
         }
-        while (hel > 10 || hel < 1)
+        while (health > 10 || health < 1)
         {
             System.out.println("Enter HEALTH (1-10): ");
-            hel = scram.nextInt();
+            health = scram.nextInt();
         }
-        while (lck > 10 || lck < 1)
+        while (luck > 10 || luck < 1)
         {
             System.out.println("Enter LUCK (1-10): ");
-            lck = scram.nextInt();
+            luck = scram.nextInt();
         }
-        if (hel + lck + str > 15)
+        if (health + luck + strength > 15)
         {
             System.out.println("You have given too many points! Default values have been assigned: ");
             System.out.println(nami + ", strength: 5, health: 5, luck: 5");
         }
-        if (hel + lck + str <= 15)
+        if (health + luck + strength <= 15)
         {
             System.out.println("Welcome to Yertle's Quest! Your character is: ");
-            System.out.println(nami + ", Strength: " + str + ", Health: " + hel + ", Luck: " + lck);
+            System.out.println(nami + ", Strength: " + strength + ", Health: " + health + ", Luck: " + luck);
         }
 
     }
