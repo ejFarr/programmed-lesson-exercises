@@ -17,7 +17,21 @@ public class Fantasy
 
         System.out.println("Enter LUCK (1-10): ");
         int lck = scram.nextInt();
-
+        while (str > 10 || str < 1)
+        {
+            System.out.println("Enter STRENGTH (1-10): ");
+            str = scram.nextInt();
+        }
+        while (hel > 10 || hel < 1)
+        {
+            System.out.println("Enter HEALTH (1-10): ");
+            hel = scram.nextInt();
+        }
+        while (lck > 10 || lck < 1)
+        {
+            System.out.println("Enter LUCK (1-10): ");
+            lck = scram.nextInt();
+        }
         if (hel + lck + str > 15)
         {
             System.out.println("You have given too many points! Default values have been assigned: ");
