@@ -3,19 +3,19 @@ public class Discount
 {
     public static void main(String[] args) 
     {
-        int D;
+        int Discount;
         System.out.println("Enter the amount of purchases: ");
         Scanner scram = new Scanner(System.in);
-        int P = scram.nextInt();
+        int purchase = scram.nextInt();
 
-        if (P > 1000)
+        if (purchase > 1000)
         {
-            D = (int)(P * 0.9);
+            Discount = (int)(purchase * 0.9);
         }
         else
         {
-            D = P;
+            Discount = purchase;
         }
-        System.out.println("Discounted price: " + D);
+        System.out.println("Discounted price: " + Discount);
     }
 }

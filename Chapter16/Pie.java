@@ -5,9 +5,9 @@ public class Pie
     {
         Scanner scram = new Scanner(System.in);
         System.out.println("Enter your weight:");
-        int w = scram.nextInt();
+        int weight = scram.nextInt();
 
-        if (w > 220 && w < 280)
+        if (weight > 220 && weight < 280)
         {
             System.out.println("Weight is within limits");
         }
