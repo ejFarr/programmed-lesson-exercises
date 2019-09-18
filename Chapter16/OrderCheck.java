@@ -7,8 +7,8 @@ public class OrderCheck
         int bolt;
         int nut;
         int wash;
-        boolean n;
-        boolean w;
+        boolean nutsright;
+        boolean washersright;
         int cost;
         System.out.println("Number of bolts: ");
         bolt = scram.nextInt();
@@ -20,30 +20,30 @@ public class OrderCheck
         cost = (bolt * 5) + (nut * 3) + (wash * 1);
         if(nut >= bolt)
         {
-            n = true;
+            nutsright = true;
         }
         else
         {
-            n = false;
+            nutsright = false;
         }
         if (wash >= (2 * bolt))
         {
-            w = true;
+            washersright = true;
         }
         else
         {
-            w = false;
+            washersright = false;
         }
-        if (n == false)
+        if (nutsright == false)
         {
             System.out.println("Check the order: too few nuts");
         }
         
-        if (w == false)
+        if (washersright == false)
         {
             System.out.println("Check the order: too few washers");
         }
-        if (n && w)
+        if (nutsright && washersright)
         {
             System.out.println("Order is Ok");
         }
