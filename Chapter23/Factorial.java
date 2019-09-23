@@ -15,10 +15,12 @@ public class Factorial
         int n = 1;
         double sumE = 0;
         double sumReal = Math.exp(termX);
+        double termXb = 0;
 
         while (termX > 0.000000000001)
         {
-            termX = Math.pow(termX, n)/ factorial(n);
+            termXb = termX / n;
+            termX = Math.pow(termX, n-1) / factorial(n - 1) * termXb;
             sumE += termX;
             System.out.println("n: " + n + "\tTerm: " + termX + "\tSum: " + sumE);
             n ++;
