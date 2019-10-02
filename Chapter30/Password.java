@@ -9,7 +9,7 @@ public class Password
         String password = scan.nextLine();
         int i = 0;
         String newPassword = "";
-        for (i = 0; newPassword != password; i++)
+        for (i = 0; !newPassword.equals(password); i++)
         {
             newPassword = "";
             for (int j = 0; j < password.length(); j++)
