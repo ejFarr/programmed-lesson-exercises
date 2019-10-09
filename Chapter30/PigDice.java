@@ -10,7 +10,7 @@ public class PigDice
         int sum = 0;
         boolean computerWin = false;
         boolean playerWin = false;
-        for (int computer = 0, score = 0; computer < 100 || score < 100; )
+        for (int computer = 0, score = 0; computer < 100 && score < 100; )
         {
             sum = 0;
             rollString = "";
