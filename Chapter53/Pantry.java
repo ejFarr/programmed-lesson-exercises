@@ -42,6 +42,10 @@ public class Pantry {
     System.out.println(this.toString());
   }
 
+  public void replace(Jam j, int slot) {
+    
+  }
+
   // assume that the user entered a correct selection, 1, 2, or 3
   public boolean select( int jarNumber ) {
     if ( jarNumber == 1 && jar1 != null) {
