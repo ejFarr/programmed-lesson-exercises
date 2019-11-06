@@ -8,8 +8,7 @@ public class PantryTester {
         Jam rhub  = new Jam( "Rhubarb", "10/31/99", 3 );
 
         Pantry hubbard = new Pantry( goose, apple, rhub );
-        System.out.println( "Welcome to Mother Hubbard's Pantry" );
-
+        
         hubbard.select(1);
         hubbard.spread(2);
         System.out.println( hubbard );
