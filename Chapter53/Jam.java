@@ -8,6 +8,12 @@ public class Jam {
         this . date = date ;
         capacity = size;
     }
+    public int size() {
+      return capacity;
+    }
+    public String date() {
+      return date;
+    }
     public boolean empty() {
         return (capacity == 0);
     }

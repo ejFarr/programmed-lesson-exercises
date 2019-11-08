@@ -53,6 +53,11 @@ public class Pantry {
       this.jar3 = j;
     }
   }
+  public void mixedFruit() {
+    if (jar1.size() <= 2 && jar2.size() <= 2 && jar3.size() <= 2) {
+      Jam mixed = new Jam("Mixed Fruit", jar1.date(), jar1.size() + jar2.size() + jar3.size());
+    }
+  }
 
   // assume that the user entered a correct selection, 1, 2, or 3
   public boolean select( int jarNumber ) {
