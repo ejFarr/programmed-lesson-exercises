@@ -43,7 +43,15 @@ public class Pantry {
   }
 
   public void replace(Jam j, int slot) {
-    
+    if (slot == 1) {
+      this.jar1 = j;
+    }
+    else if (slot == 2) {
+      this.jar2 = j;
+    }
+    else {
+      this.jar3 = j;
+    }
   }
 
   // assume that the user entered a correct selection, 1, 2, or 3
