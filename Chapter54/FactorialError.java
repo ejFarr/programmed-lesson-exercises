@@ -1,21 +1,24 @@
 import java.util.*;
-public class FactoialError {
+
+public class FactorialError {
     public static void main(String[] args) {
         Scanner scan = new Scanner( System.in );
-        long fact; 
-        int N;
+        long fact = 0; 
+        int n;
 
         System.out.println( "To exit, enter a negative value" );
         System.out.print( "Enter N: " );
-        N = scan.nextInt();
+        n = scan.nextInt();
 
-        while ( N <= 0 )
+        while ( factorial(n) <= 0 )
         {
-        fact = factorial( N );
+        fact = factorial( n );
         System.out.println( "factorial is " + fact );
         System.out.print( "Enter N: " );
-        N = scan.nextInt();
+        n = scan.nextInt();
         }
+        fact = factorial(n);
+        System.out.println(fact);
     }
     public static long factorial( int num )
     {
@@ -24,6 +27,9 @@ public class FactoialError {
         } else if (num > 20) {
             return -1;
         }
-        return 1L;
+        long fct = 1;
+        for ( int j=1; j<=num; j++ )
+        fct *= j;
+        return fct;
     }
 }
