@@ -24,6 +24,14 @@ public class Weight {
       }
       return average / data.length;
   }
+
+  public int subAverage (int start, int end) {
+      int average = 0;
+      for (int i = start - 1; i < end; i++) {
+          average += data[i];
+      }
+      return average / (end - start);
+  }
   
   //Print
   public String toString() {
